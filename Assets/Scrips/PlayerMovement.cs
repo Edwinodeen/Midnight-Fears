@@ -46,6 +46,8 @@ public class PlayerMovement : MonoBehaviour  /// Leos kod
 
     Rigidbody rb;
 
+    public bool triggerColided;
+
     public MovementState state;
     public enum MovementState
     {
@@ -77,6 +79,15 @@ public class PlayerMovement : MonoBehaviour  /// Leos kod
             rb.drag = groundDrag;
         else
             rb.drag = 0;
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Trigger")
+        {
+            triggerColided = true;
+            print("collided!");
+        }
     }
 
     private void FixedUpdate()
