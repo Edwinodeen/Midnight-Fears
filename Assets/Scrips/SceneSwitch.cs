@@ -5,18 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitch : MonoBehaviour
 {
-    public class SceneChanger : MonoBehaviour
-    {
-        // You can call this method to change to a specific scene by name
-        public void ChangeToScene(string sceneName)
-        {
-            SceneManager.LoadScene(sceneName);
-        }
+    // Name of the scene to switch to
+    public string targetSceneName;
 
-        // Example of usage in Unity's UI Button
-        public void OnButtonClick(string sceneName)
+    Camera cam;
+
+    private void Start()
+    {
+        cam = FindObjectOfType<Camera>();
+    }
+
+    // Check for mouse click on the GameObject
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
         {
-            ChangeToScene(sceneName);
+            // Cast a ray from the camera to the mouse position
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            // Check if the ray hits this GameObject
+            if (Physics.Raycast(ray, out hit) && hit.collider.gameObject == gameObject)
+            {
+                // Change to the target scene
+                SceneManager.LoadScene(targetSceneName);
+            }
         }
     }
 }
