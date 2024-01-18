@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraMovement : MonoBehaviour
+public class CameraMovement : MonoBehaviour ///Leos kod
 {
+    PlayerMovement movementCode;
+
     public float sensX;
     public float sensY;
 
@@ -14,8 +16,11 @@ public class CameraMovement : MonoBehaviour
 
     private void Start()
     {
+        movementCode = FindObjectOfType<PlayerMovement>();
+        orientation = movementCode.transform.GetChild(0).transform;
+
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        Cursor.visible = false;  ///Fixa detta
     }
 
     private void Update()

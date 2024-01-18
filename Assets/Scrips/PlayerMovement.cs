@@ -88,6 +88,12 @@ public class PlayerMovement : MonoBehaviour  /// Leos kod
             triggerColided = true;
             print("collided!");
         }
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Destroy(gameObject);
+            // Jumpscare och huvudmeny
+        }
     }
 
     private void FixedUpdate()
