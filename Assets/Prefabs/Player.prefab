@@ -162,15 +162,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ba86612e6738240b371363309d5e40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 7
-  sprintSpeed: 10
+  walkSpeed: 2
+  sprintSpeed: 5
   groundDrag: 5
   jumpForce: 5
   jumpCooldown: 0.25
   airMultiplier: 0.2
   crouchSpeed: 2.5
   crouchYScale: 0.5
-  jumpKey: 32
+  jumpKey: 0
   sprintKey: 304
   crouchKey: 306
   playerHeight: 2
@@ -180,6 +180,7 @@ MonoBehaviour:
   maxSlopeAngle: 45
   orientation: {fileID: 0}
   triggerColided: 0
+  trigger1Colided: 0
   state: 0
 --- !u!114 &1657425775896624207
 MonoBehaviour:
