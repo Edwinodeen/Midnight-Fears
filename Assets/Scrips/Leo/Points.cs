@@ -23,7 +23,7 @@ public class Points : MonoBehaviour ///Leos kod
     {
         if (collision.gameObject.tag == "Loot")
         {
-
+            scoreText.text = "Gathered loot - " + playerScore; 
         }
     }
 }

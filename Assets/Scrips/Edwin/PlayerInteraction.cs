@@ -14,6 +14,13 @@ public class PlayerInteraction : MonoBehaviour
     public TextMeshProUGUI interactionText;
     public LayerMask mask;
 
+    Points score;
+
+    private void Start()
+    {
+        score = FindObjectOfType<Points>();
+    }
+
     private void Update()
     {
         InteractionRay();
