@@ -493,7 +493,9 @@ MonoBehaviour:
   PlayerLayer:
     serializedVersion: 2
     m_Bits: 64
-  range: 15
+  range: 30
+  sightRange: 10
+  attackrange: 1
 --- !u!1 &1510443661
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +508,7 @@ GameObject:
   - component: {fileID: 1510443664}
   - component: {fileID: 1510443663}
   - component: {fileID: 1510443662}
+  - component: {fileID: 1510443666}
   m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
@@ -591,6 +594,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &1510443666
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510443661}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1749414529
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,6 +831,7 @@ GameObject:
   - component: {fileID: 2101522801}
   - component: {fileID: 2101522800}
   - component: {fileID: 2101522799}
+  - component: {fileID: 2101522803}
   m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -897,3 +917,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &2101522803
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101522798}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

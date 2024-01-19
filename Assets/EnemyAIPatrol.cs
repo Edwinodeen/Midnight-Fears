@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 public class EnemyAIPatrol : MonoBehaviour
+    //Theo
 {
     GameObject Player;
 
@@ -14,6 +15,9 @@ public class EnemyAIPatrol : MonoBehaviour
     Vector3 destPoint;
     bool walkpointSet;
     [SerializeField] float range;
+
+    [SerializeField] float sightRange, attackrange;
+    bool playerInSight, playerInAttackRange;
  
     // Start is called before the first frame update
     void Start()
@@ -25,7 +29,23 @@ public class EnemyAIPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        patrol();
+        playerInSight = Physics.CheckSphere(transform.position, sightRange, PlayerLayer);
+        playerInSight = Physics.CheckSphere(transform.position, attackrange, PlayerLayer);
+
+        if(!playerInSight && !playerInAttackRange) patrol();
+        if(playerInSight && !playerInAttackRange) Chase();
+        if(playerInSight && playerInAttackRange) Attack();
+    }
+
+    void Attack()
+    {
+        
+
+
+    }
+     void Chase()
+    {
+        agent.SetDestination(Player.transform.position);
     }
 
      void patrol()
