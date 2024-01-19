@@ -9,7 +9,7 @@ public class SoundRandomizer : MonoBehaviour
     [Range(0.1f, 0.5f)]
     public float volumeChangeMultiplier = 0.2f;
     public float pitchChangeMultiplier = 0.2f;
-    float timer;
+    float timer = 10;
 
     void Start()
     {

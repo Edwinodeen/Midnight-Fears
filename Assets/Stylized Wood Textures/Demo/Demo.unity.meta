@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/Theo.meta
+guid: 37f430dbe3981f442ae8736077732dc6
+folderAsset: yes
+========
 guid: ab0d50abf92937d42ac6997e0ff3f5c9
+>>>>>>>> 20c8bc0f2cfc7e6a4db009ddba656d6655a6fd01:Assets/Stylized Wood Textures/Demo/Demo.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
