@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags: []
+=======
+  tags:
+  - Enemy
+  - Pickupable
+>>>>>>> 3a41f42d293720b3c37d049f796ac4622e25fd6e
   layers:
   - Default
   - TransparentFX
@@ -11,10 +17,16 @@ TagManager:
   - 
   - Water
   - UI
+<<<<<<< HEAD
   - 
   - 
   - 
+=======
+  - player
+  - ground
+>>>>>>> 3a41f42d293720b3c37d049f796ac4622e25fd6e
   - 
+  - PP
   - 
   - 
   - 
