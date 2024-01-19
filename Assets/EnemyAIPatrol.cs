@@ -26,6 +26,15 @@ public class EnemyAIPatrol : MonoBehaviour
         Player = GameObject.Find("Player");
     }
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, sightRange);
+        Gizmos.color = Color.white;
+
+        Gizmos.DrawLine(transform.position, destPoint);
+    }
+
     // Update is called once per frame
     void Update()
     {

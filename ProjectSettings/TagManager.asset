@@ -4,23 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
-  - Trigger
-  - Flashlight
   - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - 
   - Water
   - UI
-  - Player
-<<<<<<< HEAD
-  - navmesh
-=======
-  - Interact
->>>>>>> 20c8bc0f2cfc7e6a4db009ddba656d6655a6fd01
+  - player
+  - ground
   - 
   - 
   - 
