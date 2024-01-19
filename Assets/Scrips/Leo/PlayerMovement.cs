@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour  /// Leos kod
 
     void Update()
     {
-
+        print("update");
         //Ground Check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
         SpeedControl();
@@ -105,15 +105,16 @@ public class PlayerMovement : MonoBehaviour  /// Leos kod
 
     private void FixedUpdate()
     {
+        print("Fixed");
         MovePlayer();
     }
 
     private void MyInput()
     {
-
+      
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
-
+        print(verticalInput);
         //När man ska hoppa
         if (Input.GetKey(jumpKey) && readyToJump && grounded)
         {
@@ -169,16 +170,17 @@ public class PlayerMovement : MonoBehaviour  /// Leos kod
     {
         //Räkna ut rörelse riktningen 
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
-
+        print("move");
         //På en slope
         if (OnSlope() && !exitingSlope)
         {
+            print("slope");
             rb.AddForce(GetSlopeMoveDirection() * moveSpeed * 20f, ForceMode.Force);
 
             if (rb.velocity.y > 0)
                 rb.AddForce(Vector3.down * 80f, ForceMode.Force);
         }
-
+        print("grounded " + grounded);
         //På marken
         if (grounded)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
