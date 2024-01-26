@@ -47,6 +47,12 @@ public class PlayerInteraction : MonoBehaviour
                     interactable.Interact();
                 }
             }
+
+            if (Input.GetKeyDown(KeyCode.F) && hit.collider.CompareTag("Pickupable") )
+            {
+                PickupController.instance.pickup(hit.collider.gameObject);
+            }
+
         }
 
         interactionUI.SetActive(hitsomething);

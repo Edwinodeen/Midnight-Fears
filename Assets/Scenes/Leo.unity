@@ -612,7 +612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d800bea7eb75944689bc548253aa282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TriggerEnemy: {fileID: 7477909863230791663, guid: 0bce86df698456a44a774ed7bd10e1f6, type: 3}
+  TriggerEnemy: {fileID: 4092068642259919457, guid: 83ce5532acd2b4242b69f65f010b4397, type: 3}
   spawnPosition: {fileID: 1802436670}
   lowerBound: 0.2
   higherBound: 0.4
@@ -903,7 +903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d800bea7eb75944689bc548253aa282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TriggerEnemy: {fileID: 7477909863230791663, guid: 0bce86df698456a44a774ed7bd10e1f6, type: 3}
+  TriggerEnemy: {fileID: 5789676173393362727, guid: 44b6a11fdee03d348a9cf5e95da44e58, type: 3}
   spawnPosition: {fileID: 1181220024}
   lowerBound: 0.2
   higherBound: 0.4
@@ -1471,7 +1471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d800bea7eb75944689bc548253aa282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TriggerEnemy: {fileID: 7477909863230791663, guid: 0bce86df698456a44a774ed7bd10e1f6, type: 3}
+  TriggerEnemy: {fileID: 5789676173393362727, guid: 44b6a11fdee03d348a9cf5e95da44e58, type: 3}
   spawnPosition: {fileID: 1802436670}
   lowerBound: 0.2
   higherBound: 0.4
@@ -1602,7 +1602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d800bea7eb75944689bc548253aa282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TriggerEnemy: {fileID: 7477909863230791663, guid: 0bce86df698456a44a774ed7bd10e1f6, type: 3}
+  TriggerEnemy: {fileID: 2040420618444490822, guid: 06eb75a297dde844d920187eafe51015, type: 3}
   spawnPosition: {fileID: 1181220024}
   lowerBound: 0
   higherBound: 0.2
