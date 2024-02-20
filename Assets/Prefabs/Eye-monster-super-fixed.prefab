@@ -141,6 +141,7 @@ GameObject:
   - component: {fileID: 1193575312833760402}
   - component: {fileID: 1193575312833760404}
   - component: {fileID: 1279982277623705782}
+  - component: {fileID: 6512180680580130167}
   m_Layer: 0
   m_Name: Eye-monster-super-fixed
   m_TagString: Untagged
@@ -196,7 +197,7 @@ BoxCollider:
   m_Center: {x: 0, y: 0.16620333, z: -0.0100000035}
 --- !u!95 &1193575312833760404
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -213,7 +214,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1279982277623705782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +231,22 @@ MonoBehaviour:
   aliveTime: 5
   target: {fileID: 0}
   speed: 5
+--- !u!114 &6512180680580130167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040420618444490822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6933ed837da1aad47a8f00cd11450bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scream: {fileID: 0}
+  PlayerCam: {fileID: 0}
+  JumpCam: {fileID: 0}
+  FlashImg: {fileID: 0}
 --- !u!1 &2424879715279941212
 GameObject:
   m_ObjectHideFlags: 0
