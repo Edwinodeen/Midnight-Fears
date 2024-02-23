@@ -228,9 +228,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ec6752e6051f64d98745788fce275d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aliveTime: 5
+  aliveTime: 2
   target: {fileID: 0}
-  speed: 5
+  speed: 20
 --- !u!114 &6512180680580130167
 MonoBehaviour:
   m_ObjectHideFlags: 0

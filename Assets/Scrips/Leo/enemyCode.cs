@@ -9,7 +9,7 @@ public class enemyCode : MonoBehaviour ///Leos kod
     public float aliveTime;
 
     public GameObject target;  
-    public float speed = 5f;
+    public float speed = 20f;
     Rigidbody rb;
 
     // Start is called before the first frame update
